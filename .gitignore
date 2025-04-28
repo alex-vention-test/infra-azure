@@ -1,1 +1,26 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+*.backup
+*.log
+
+# Удалённые планы
+*.tfplan
+
+# Локальные файлы переменных (их не пушат, чтобы не спалить секреты)
+*.tfvars
+*.tfvars.json
+
+# Папка с провайдерами и кэшами
 .terraform/
+
+# Автоматические файлы и временные штуки
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# .terraform.lock.hcl оставляем в Git (рекомендуется!)
+# но если не хочешь — можешь добавить:
+# .terraform.lock.hcl
